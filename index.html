@@ -349,7 +349,7 @@ print
 </div>
 <footer class="footer">
     <div class="container">
-        <span class="copyright">Copyright © <script>document.write(new date().getFullYear())</script> CyberFocus. Designed by<a href="http://cybfoc.com"> CybFoc</a>.</span>
+        <span class="copyright">Copyright © <span id="year">2018</span> CyberFocus. Designed by<a href="http://cybfoc.com"> CybFoc</a>.</span>
     </div>
 </footer>
 
@@ -379,6 +379,7 @@ print
       section.className = 'wow fadeInDown';
       this.parentNode.insertBefore(section, this);
     };
+    document.getElementById("year").innerHTML = new Date().getFullYear();
   </script>
 
 
